@@ -72,3 +72,81 @@
   
 // }
 
+
+
+// 5. Simple Quiz App
+// let answer1 = "joaquin";
+// let answer2 = "abalo";
+// let answer3 = "meroy";
+
+// let myAnswer1 = prompt("What is your firstname")
+// let myAnswer2 = prompt("What is your middlename")
+// let myAnswer3 = prompt("What is your lastname")
+
+// let myH1 = document.getElementById("myH1");
+
+// let correctAnswerCount = 0;
+
+// if(myAnswer1 === answer1){
+//   correctAnswerCount++;
+// }
+// if(myAnswer2 === answer2){
+//   correctAnswerCount++;
+// }
+// if(myAnswer3 === answer3){
+//   correctAnswerCount++;
+// }
+
+// myH1.textContent = `You got ${correctAnswerCount} out of 3 correct!`
+
+
+
+// 6. Shopping Cart Total
+// const item1 = 100;
+// const item2 = 50;
+// const item3 = 80;
+
+// let item1Total = document.getElementById("item1");
+// let item2Total = document.getElementById("item2");
+// let item3Total = document.getElementById("item3");
+
+// let item1Quantity = prompt("Enter Quantity of first Item");
+// let item2Quantity = prompt("Enter Quantity of second Item");
+// let item3Quantity = prompt("Enter Quantity of third Item");
+
+// item1Total.textContent = `Total Amount of First Item is ${item1 * item1Quantity}`;
+// item2Total.textContent = `Total Amount of Second Item is ${item2 * item1Quantity}`;
+// item3Total.textContent = `Total Amount of Third Item is ${item3 * item1Quantity}`;
+
+
+
+// 7. Color Changer (Interactive UI)
+// const color1 = "red";
+// const color2 = "blue";
+// const color3 = "yellow";
+
+// let myBtn = document.getElementById("myBtn");
+
+// let currentIndex = 1;
+
+// myBtn.onclick = function(){
+//   if(currentIndex === 1){
+//     document.body.style.backgroundColor = color1;
+//     currentIndex = 2;
+//   }
+//   else if(currentIndex === 2){
+//     document.body.style.backgroundColor = color2;
+//     currentIndex = 3;
+//   }
+//   else if(currentIndex === 3){
+//     document.body.style.backgroundColor = color3;
+//     currentIndex = 1;
+//   }
+// }
+
+
+
+
+
+
+
