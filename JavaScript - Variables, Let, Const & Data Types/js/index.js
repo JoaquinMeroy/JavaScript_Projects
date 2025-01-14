@@ -26,16 +26,31 @@
 
 // 3. Daily Planner
 
-let myMorning = document.getElementById("myMorning");
-let myAfternoon = document.getElementById("myAfternoon");
-let myEvening = document.getElementById("myEvening");
+// let myMorning = document.getElementById("myMorning");
+// let myAfternoon = document.getElementById("myAfternoon");
+// let myEvening = document.getElementById("myEvening");
 
-let Morning = prompt("Whats your morning routine");
-let Afternoon = prompt("Whats your afternon routine");
-let Evening = prompt("Whats your evening routine");
+// let Morning = prompt("Whats your morning routine");
+// let Afternoon = prompt("Whats your afternon routine");
+// let Evening = prompt("Whats your evening routine");
 
-myMorning.textContent = `Morning: ${Morning}`;
-myAfternoon.textContent = `Afternoon: ${Afternoon}`;
-myEvening.textContent = `Evening: ${Evening}`;
+// myMorning.textContent = `Morning: ${Morning}`;
+// myAfternoon.textContent = `Afternoon: ${Afternoon}`;
+// myEvening.textContent = `Evening: ${Evening}`;
+
+
+
+// 4. Simple To-Do List
+
+// let task = [
+//   "wake up",
+//   "create project",
+//   "sleep again"
+// ];
+// let numList = 1;
+// task.forEach(function(myTaskList){
+//   console.log(numList++ + " " + myTaskList);
+// });
+
 
 
