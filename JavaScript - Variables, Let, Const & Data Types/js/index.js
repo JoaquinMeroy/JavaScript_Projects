@@ -54,3 +54,18 @@
 
 
 
+// 5. Budget Tracker
+// let totalBudget = document.getElementById("total-budget");
+// amount = 10000;
+
+// let expence1 = prompt("Food Budget?");
+// let expence2 = prompt("Allowance?");
+// let expence3 = prompt("Transportation Allowance?");
+
+// convertedexpence1 = Number(expence1)
+// convertedexpence2 = Number(expence2)
+// convertedexpence3 = Number(expence3)
+
+// let totalExpence = (convertedexpence1 + convertedexpence2 + convertedexpence3);
+
+// totalBudget.textContent = (totalExpence - amount);
