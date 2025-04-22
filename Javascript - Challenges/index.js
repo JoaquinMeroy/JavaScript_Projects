@@ -1,53 +1,24 @@
 "use strict";
 
-const weekHrsWorked = [7.5, 8, 6.5, 0, 8.5, 4, 0];
+// Day 1: Expense Tracker (Basic version)
+const expenseList = [20, 50, 100, 200, 450];
+const expenseInput = Number(prompt("Enter expense"));
 
-const getTotalHoursWorked = function (weekHrsWorked) {
-  let totalHoursWorked = 0;
-  for (let i = 0; i <= weekHrsWorked.length - 1; i++) {
-    totalHoursWorked = totalHoursWorked + weekHrsWorked[i];
-  }
-  return totalHoursWorked;
-};
+const addNewExpense = function (expense) {
+  expenseList.push(expense);
+  let totalExpense = 0;
 
-const getAverageDailyHours = function (weekHrsWorked) {
-  let totalHoursWorked = 0;
-  for (let i = 0; i <= weekHrsWorked.length - 1; i++) {
-    totalHoursWorked = totalHoursWorked + weekHrsWorked[i];
-  }
-  return totalHoursWorked / weekHrsWorked.length;
-};
-
-const getDayOfHighestHours = function (weekHrsWorked) {
-  let maxValue = 0;
-  let maxValueDay = 0;
-
-  for (let i = 0; i < weekHrsWorked.length; i++) {
-    if (weekHrsWorked[i] > maxValue) {
-      maxValue = weekHrsWorked[i];
-      maxValueDay = i + 1;
-    }
-  }
-  let maxValueAndDay = [maxValue, maxValueDay];
-
-  return maxValueAndDay;
-};
-
-const getNumberOfDaysWork = function (weekHrsWorked) {
-  return weekHrsWorked.length;
-};
-
-const getIfWeekIsFullTIme = function (weekHrsWorked) {
-  let totalHoursWorked = 0;
-  for (let i = 0; i <= weekHrsWorked.length - 1; i++) {
-    totalHoursWorked = totalHoursWorked + weekHrsWorked[i];
+  for (let i = 0; i < expenseList.length; i++) {
+    totalExpense = totalExpense + expenseList[i];
   }
 
-  return totalHoursWorked > 35 ? "Full-Time" : "Part-Time";
+  if (totalExpense > 1000) {
+    return `Stop! you overspending your money! you've already spend ${totalExpense}`;
+  } else {
+    return `your spending is ${totalExpense}`;
+  }
 };
 
-console.log(getTotalHoursWorked(weekHrsWorked));
-console.log(getAverageDailyHours(weekHrsWorked));
-console.log(getDayOfHighestHours(weekHrsWorked));
-console.log(getNumberOfDaysWork(weekHrsWorked));
-console.log(getIfWeekIsFullTIme(weekHrsWorked));
+console.log(addNewExpense(expenseInput));
+
+// Day 2: Simple Quiz App (Text Only)
