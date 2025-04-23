@@ -1,8 +1,53 @@
 "use strict";
-let firstName = prompt("what is your name:");
-let age = prompt("what is your age:");
-let favoriteHobby = prompt("what is your favorite hobby:");
 
-console.log(
-  `my name is ${firstName}, age is ${age} and my favorite hobby is${favoriteHobby}`
-);
+const weekHrsWorked = [7.5, 8, 6.5, 0, 8.5, 4, 0];
+
+const getTotalHoursWorked = function (weekHrsWorked) {
+  let totalHoursWorked = 0;
+  for (let i = 0; i <= weekHrsWorked.length - 1; i++) {
+    totalHoursWorked = totalHoursWorked + weekHrsWorked[i];
+  }
+  return totalHoursWorked;
+};
+
+const getAverageDailyHours = function (weekHrsWorked) {
+  let totalHoursWorked = 0;
+  for (let i = 0; i <= weekHrsWorked.length - 1; i++) {
+    totalHoursWorked = totalHoursWorked + weekHrsWorked[i];
+  }
+  return totalHoursWorked / weekHrsWorked.length;
+};
+
+const getDayOfHighestHours = function (weekHrsWorked) {
+  let maxValue = 0;
+  let maxValueDay = 0;
+
+  for (let i = 0; i < weekHrsWorked.length; i++) {
+    if (weekHrsWorked[i] > maxValue) {
+      maxValue = weekHrsWorked[i];
+      maxValueDay = i + 1;
+    }
+  }
+  let maxValueAndDay = [maxValue, maxValueDay];
+
+  return maxValueAndDay;
+};
+
+const getNumberOfDaysWork = function (weekHrsWorked) {
+  return weekHrsWorked.length;
+};
+
+const getIfWeekIsFullTIme = function (weekHrsWorked) {
+  let totalHoursWorked = 0;
+  for (let i = 0; i <= weekHrsWorked.length - 1; i++) {
+    totalHoursWorked = totalHoursWorked + weekHrsWorked[i];
+  }
+
+  return totalHoursWorked > 35 ? "Full-Time" : "Part-Time";
+};
+
+console.log(getTotalHoursWorked(weekHrsWorked));
+console.log(getAverageDailyHours(weekHrsWorked));
+console.log(getDayOfHighestHours(weekHrsWorked));
+console.log(getNumberOfDaysWork(weekHrsWorked));
+console.log(getIfWeekIsFullTIme(weekHrsWorked));
