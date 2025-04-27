@@ -1,7 +1,7 @@
 "use strict";
 
 // Day 1: Expense Tracker (Basic version 1)
-let expenseList = [];
+/*let expenseList = [];
 
 function sumTotalExpense(expenseList) {
   let totalExpense = 0;
@@ -26,6 +26,26 @@ Enter expense: `)
     window.alert(`Stop! your expense is ${currentTotal}. limit reached.`);
     break;
   }
-}
+}*/
 
 // Day 2: Simple Quiz App (Text Only)
+let questions = {
+  question1: prompt("What is your name?"),
+  question2: Number(prompt("What is your age?")),
+  question3: prompt("What is your gender?"),
+};
+
+let score = 0;
+if (questions.question1 == "joaquin") {
+  score++;
+}
+
+if (questions.question2 == 23) {
+  score++;
+}
+
+if (questions.question3 == "male") {
+  score++;
+}
+
+window.alert(`Score is ${score}`);
