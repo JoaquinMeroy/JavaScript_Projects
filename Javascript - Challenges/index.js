@@ -29,23 +29,34 @@ Enter expense: `)
 }*/
 
 // Day 2: Simple Quiz App (Text Only)
-let questions = {
-  question1: prompt("What is your name?"),
-  question2: Number(prompt("What is your age?")),
-  question3: prompt("What is your gender?"),
-};
+let questions = [
+  { question: "What is your name?", answer: "joaquin" },
+  { question: "What is your age?", answer: 23 },
+  { question: "What is your gender?", answer: "male" },
+];
 
-let score = 0;
-if (questions.question1 == "joaquin") {
-  score++;
+for (let i = 0; i < questions.length; i++) {
+  let usersAnswerprompt = prompt(questions[i].question);
+  console.log(usersAnswerprompt);
 }
 
-if (questions.question2 == 23) {
-  score++;
-}
+// let questions = {
+//   question1: prompt("What is your name?"),
+//   question2: Number(prompt("What is your age?")),
+//   question3: prompt("What is your gender?"),
+// };
 
-if (questions.question3 == "male") {
-  score++;
-}
+// let score = 0;
+// if (questions.question1 == "joaquin") {
+//   score++;
+// }
 
-window.alert(`Score is ${score}`);
+// if (questions.question2 == 23) {
+//   score++;
+// }
+
+// if (questions.question3 == "male") {
+//   score++;
+// }
+
+// window.alert(`Score is ${score}`);
