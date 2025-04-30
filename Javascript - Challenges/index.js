@@ -35,28 +35,14 @@ let questions = [
   { question: "What is your gender?", answer: "male" },
 ];
 
+let score = 0;
+
 for (let i = 0; i < questions.length; i++) {
   let usersAnswerprompt = prompt(questions[i].question);
-  console.log(usersAnswerprompt);
+
+  if (usersAnswerprompt == questions[i].answer) {
+    score++;
+  }
 }
 
-// let questions = {
-//   question1: prompt("What is your name?"),
-//   question2: Number(prompt("What is your age?")),
-//   question3: prompt("What is your gender?"),
-// };
-
-// let score = 0;
-// if (questions.question1 == "joaquin") {
-//   score++;
-// }
-
-// if (questions.question2 == 23) {
-//   score++;
-// }
-
-// if (questions.question3 == "male") {
-//   score++;
-// }
-
-// window.alert(`Score is ${score}`);
+console.log(score);
