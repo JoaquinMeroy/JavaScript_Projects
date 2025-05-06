@@ -29,7 +29,7 @@ Enter expense: `)
 }*/
 
 // Day 2: Simple Quiz App (Text Only)
-let questions = [
+/*let questions = [
   { question: "What is your name?", answer: "joaquin" },
   { question: "What is your age?", answer: 23 },
   { question: "What is your gender?", answer: "male" },
@@ -45,4 +45,18 @@ for (let i = 0; i < questions.length; i++) {
   }
 }
 
-console.log(score);
+console.log(score);*/
+// Day 3: Grocery List Manager
+const groceryList = [];
+
+let choice = prompt(`What do you want to do? Add item, Remove item,`);
+
+if (choice === "Add item") {
+  for (let i = 0; i <= groceryList.length; i++) {
+    let addedItem = prompt(`${groceryList} Enter item`);
+    groceryList.push(addedItem);
+  }
+}
+if (choice == "Remove item") {
+  let choiceRemove = prompt(`What do you want to remove? Last or First?`);
+}
