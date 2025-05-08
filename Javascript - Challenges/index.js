@@ -49,14 +49,17 @@ console.log(score);*/
 // Day 3: Grocery List Manager
 const groceryList = [];
 
-let choice = prompt(`What do you want to do? Add item, Remove item,`);
+let i = 0;
+while (i <= groceryList.length) {
+  let enteredItem = prompt(`
+${groceryList}
+Add Item`);
 
-if (choice === "Add item") {
-  for (let i = 0; i <= groceryList.length; i++) {
-    let addedItem = prompt(`${groceryList} Enter item`);
-    groceryList.push(addedItem);
+  function addItem(enteredItem) {
+    groceryList.push(enteredItem);
+
+    return groceryList;
   }
-}
-if (choice == "Remove item") {
-  let choiceRemove = prompt(`What do you want to remove? Last or First?`);
+  addItem(enteredItem);
+  i++;
 }
