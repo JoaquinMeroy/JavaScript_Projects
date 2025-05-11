@@ -55,11 +55,15 @@ while (i <= groceryList.length) {
 ${groceryList}
 Add Item`);
 
-  function addItem(enteredItem) {
-    groceryList.push(enteredItem);
-
-    return groceryList;
-  }
   addItem(enteredItem);
   i++;
 }
+
+// Add Function
+function addItem(enteredItem) {
+  groceryList.push(enteredItem);
+
+  return groceryList;
+}
+
+// Remove First Item Function
