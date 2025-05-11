@@ -50,13 +50,22 @@ console.log(score);*/
 const groceryList = [];
 
 let i = 0;
-while (i <= groceryList.length) {
-  let enteredItem = prompt(`
-${groceryList}
-Add Item`);
 
-  addItem(enteredItem);
-  i++;
+let enteredAction = prompt(
+  "What do you want to do? Add an item?, Remove an item?, or Check an item?"
+);
+
+if (enteredAction === "Add an item") {
+  while (i <= groceryList.length) {
+    let enteredItem = prompt(`${groceryList} Add Item`);
+
+    if (enteredAction == "Done") {
+      enteredAction;
+    } else {
+      addItem(enteredItem);
+      i++;
+    }
+  }
 }
 
 // Add Function
@@ -67,3 +76,11 @@ function addItem(enteredItem) {
 }
 
 // Remove First Item Function
+function removeLastItem(groceryList) {
+  groceryList.pop();
+}
+
+// Remove Last Item Function
+function removeLastItem(groceryList) {
+  groceryList.shift();
+}
