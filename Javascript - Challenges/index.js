@@ -47,36 +47,52 @@ for (let i = 0; i < questions.length; i++) {
 
 console.log(score);*/
 // Day 3: Grocery List Manager
-const groceryList = [];
+const groceryList = ["Apple", "Banana", "Orange"];
 
-let i = 0;
+let enteredAction;
 
-let enteredAction = prompt(
-  "What do you want to do? Add an item?, Remove an item?, or Check an item?"
+enteredAction = prompt(
+  "What do you want to do? Add an item?, Remove an item?, Show list, or Check an item?"
 );
 
 if (enteredAction === "Add an item") {
-  while (i <= groceryList.length) {
-    let enteredItem = prompt(`${groceryList} Add Item`);
+  let addedItem;
+  while (addedItem != "Done") {
+    addedItem = prompt(`
+${groceryList}
+Add item`);
+    addItem(addedItem);
 
-    if (enteredAction == "Done") {
-      enteredAction;
-    } else {
-      addItem(enteredItem);
-      i++;
+    if (addedItem == "Done") {
+      enteredAction = prompt(
+        "What do you want to do? Add an item?, Remove an item?, Show list, or Check an item?"
+      );
     }
   }
+} else if (enteredAction === "Remove an item") {
+  let removedItemPosition = prompt("Remove First or Last item?");
+  if (removedItemPosition === "First") {
+    removeFirstItem(groceryList);
+  } else if (removedItemPosition === "Last") {
+    removeLastItem(groceryList);
+  }
+} else if (enteredAction === "Show List") {
+  prompt(`
+${groceryList}
+What now?`);
+} else {
+  alert("Enter valid command");
 }
 
 // Add Function
-function addItem(enteredItem) {
-  groceryList.push(enteredItem);
+function addItem(addedItem) {
+  groceryList.push(addedItem);
 
   return groceryList;
 }
 
 // Remove First Item Function
-function removeLastItem(groceryList) {
+function removeFirstItem(groceryList) {
   groceryList.pop();
 }
 
