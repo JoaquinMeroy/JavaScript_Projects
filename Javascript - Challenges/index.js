@@ -58,9 +58,7 @@ enteredAction = prompt(
 if (enteredAction === "Add an item") {
   let addedItem;
   while (addedItem != "Done") {
-    addedItem = prompt(`
-${groceryList}
-Add item`);
+    addedItem = prompt(`${groceryList}Add item`);
     addItem(addedItem);
 
     if (addedItem == "Done") {
@@ -77,9 +75,7 @@ Add item`);
     removeLastItem(groceryList);
   }
 } else if (enteredAction === "Show List") {
-  prompt(`
-${groceryList}
-What now?`);
+  prompt(`${groceryList}What now?`);
 } else {
   alert("Enter valid command");
 }
