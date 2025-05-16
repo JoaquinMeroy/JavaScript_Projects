@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Enhanced HTML Syntax Highlighter</h1>
+
+    <div class="container">
+      <div>
+        <div class="section-title">Input your HTML code:</div>
+        <textarea
+          id="htmlInput"
+          placeholder="Paste your HTML code here..."
+        ></textarea>
+      </div>
+
+      <button id="convertBtn">Convert to Syntax Highlighted</button>
+
+      <div>
+        <div class="section-title">Visual Output:</div>
+        <div id="visualOutput" class="output"></div>
+      </div>
+
+      <div>
+        <div class="section-title">HTML Output (to copy):</div>
+        <pre id="htmlOutput"></pre>
+        <button id="copyBtn" class="copy-btn">Copy HTML</button>
+      </div>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>

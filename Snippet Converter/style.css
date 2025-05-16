@@ -1,0 +1,179 @@
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  line-height: 1.6;
+}
+
+h1 {
+  color: #333;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+textarea {
+  width: 100%;
+  min-height: 200px;
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-family: monospace;
+  font-size: 14px;
+  resize: vertical;
+}
+
+button {
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+pre {
+  background-color: #f5f5f5;
+  padding: 15px;
+  border-radius: 4px;
+  overflow: auto;
+  font-family: monospace;
+  font-size: 14px;
+  white-space: pre-wrap;
+  border: 1px solid #ddd;
+}
+
+.output {
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 15px;
+  background-color: #fff;
+}
+
+/* Enhanced Syntax highlighting styles */
+.htmlTagDelimiter {
+  color: #0000ff;
+}
+
+.htmlElementName {
+  color: #800000;
+  font-weight: bold;
+}
+
+.htmlAttributeName {
+  color: #ff0000;
+}
+
+.htmlOperator {
+  color: #0000ff;
+}
+
+.quot {
+  color: #0000ff;
+}
+
+.htmlAttributeValue {
+  color: #0000aa;
+}
+
+.atCode {
+  color: #0000ff;
+  font-weight: bold;
+}
+
+.atIf {
+  color: #0000ff;
+  font-weight: bold;
+}
+
+.razorKeyword {
+  color: #0000ff;
+  font-weight: bold;
+}
+
+.razorVariable {
+  color: #8b008b;
+}
+
+.razorComment {
+  color: #008000;
+  font-style: italic;
+}
+
+.codeBlock {
+  color: #000000;
+  background-color: #f8f8f8;
+}
+
+.codeKeyword {
+  color: #0000ff;
+}
+
+.codeType {
+  color: #2b91af;
+}
+
+.codeString {
+  color: #a31515;
+}
+
+.codeVariable {
+  color: #8b008b;
+}
+
+.functionCall {
+  color: #795e26;
+}
+
+.curlyBrace {
+  color: #000000;
+}
+
+.parenthesis {
+  color: #000000;
+}
+
+.squareBracket {
+  color: #000000;
+}
+
+.semicolon {
+  color: #000000;
+}
+
+.codeComment {
+  color: #008000;
+  font-style: italic;
+}
+
+.copy-btn {
+  background-color: #2196f3;
+  margin-top: 10px;
+}
+
+.copy-btn:hover {
+  background-color: #0b7dda;
+}
+
+.section-title {
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: #555;
+}
