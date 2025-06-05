@@ -44,10 +44,9 @@ for (let i = 0; i < questions.length; i++) {
     score++;
   }
 }
-
 console.log(score);*/
-// Day 3: Grocery List Manager
 
+// Day 3: Grocery List Manager
 const groceryList = [];
 
 while (true) {
@@ -57,16 +56,40 @@ while (true) {
 
   if (enteredaction === "Add Item") {
     while (true) {
-      let enteredItem = prompt("Enter an item");
+      let enteredItem = prompt("Enter an item (Type 'Done' if finish)");
       if (enteredItem === "Done") break;
 
       addItem(enteredItem);
     }
   } else if (enteredaction === "Show List") {
     alert(groceryList);
+  } else if (enteredaction === "Remove Item") {
+    let enteredPositionItemToRemove = prompt("'First' or 'Last' item");
+    if (enteredPositionItemToRemove === "First") {
+      removeFirstItem(groceryList);
+      alert("Item Removed");
+    } else if (enteredPositionItemToRemove === "Last") {
+      removeLastItem(groceryList);
+      alert("Item Removed");
+    }
+  } else if (enteredaction === "Check Item") {
+    let itemCheck = prompt("Enter item to check");
+
+    if (groceryList.includes(itemCheck)) {
+      alert("Item Found");
+    } else {
+      alert("Item not Found");
+    }
   }
 }
-
 function addItem(enteredItem) {
   return groceryList.push(enteredItem);
 }
+function removeFirstItem(groceryList) {
+  return groceryList.shift();
+}
+function removeLastItem(groceryList) {
+  return groceryList.pop();
+}
+
+// Day 4: Temperature Converter
